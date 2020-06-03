@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place keeper</title>
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="map"></div>
+    <div class="button-container">
+        <i onclick="onGetUserLocation()"
+        style='font-size: 30px;margin-top: 7px;'
+        class="far fa-location">
+        </i>
+        <a href="index.html" target="_blank"><i class="fa fa-home"></i>HomePage</a>
+        <a href="user-prefs.html" target="_blank">User pref</a>
+    </div>
+    <input type="text" placeholder="Enter location name" name="location-name" hidden>
+    <ul class="places-list"></ul>
+    <script src="js/local-storage-service.js"></script>
+    <script src="js/utils-service.js"></script>
+    <script src="js/place-keeper-service.js"></script>
+    <script src="js/place-keeper-controller.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5jw90V3SohX_6yfkksWy85ejIIPboA7A&callback=initMap">
+    </script>
+</body>
+</html>

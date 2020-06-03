@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user-pref.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>User-pref</title>
+</head>
+<body>
+    <section class="w3-card-4 w3-center">
+
+        <header class="w3-container w3-green">
+          <h2>User Style prefs</h2>
+        </header>
+        
+        <form class="w3-container" onsubmit='storeUserData(event)'>
+            <label>Text Color</label>
+            <input class="w3-input" type='color' name="txt-color" value="#ff0000">
+            
+            <label>Background-color</label>
+            <input class="w3-input" type="color" name="bg-color" value="#ff0000">
+
+            <label>Birth Date</label>
+            <input class="w3-input" type="date" name="birth-date">
+        
+            <label>Email</label>
+            <input class="w3-input" type="email" required>
+
+            <label>Age</label>
+            <input class="w3-input" type="range">
+            <button class="w3-button w3-black">Save</button>
+            <a target="_blank" href="index.html">Home Page</a>
+        </form>
+        
+    </section>
+    <script src="js/utils-service.js"></script>
+    <script src="js/local-storage-service.js"></script>
+    <script src="js/home-page-controller.js"></script>
+    <script src="js/user-pref-service.js"></script>
+    <script src="js/place-keeper-service.js"></script>
+    <script src="js/place-keeper-controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  background-color: blanchedalmond;
+}
+
+/* Set the size of the div element that contains the map */
+.map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+i {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+a {
+  margin-top: 5px;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
